@@ -1,0 +1,45 @@
+header{
+	background-color: #fff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	display: block;
+	margin: 8px 22px 8px 22px;
+	width: 90%; 
+}
+nav{
+
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+p{
+	background: #447294;
+	padding: 20px;
+	margin-bottom: 15px;
+	-webkit-border-radius: 15px;
+}
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font: bold 16px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+	display:block;
+}
+body{
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-pack: center;
+	background-color: #153450;
+	font: 14px Tahoma;
+}
+footer{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
