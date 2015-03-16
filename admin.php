@@ -1,5 +1,14 @@
-<?php
+<?php 
 	session_start();
+	if(isset($_POST['Logout'])){
+		session_destroy();
+		header("Refresh:0");
+	}
+	if( isset($_POST['login']) && isset($_POST['password'])){
+		$_SESSION["login"] = $_POST["login"];
+		$_SESSION["password"] = $_POST["password"];
+	}
+	include 'nlhInclude.php'; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,23 +20,36 @@
 
 <header>
 	<?php
-		include 'nlhInclude.php';
 		login();
 	?>
 </header>
 
 <nav>
-	<ul>
-		<li><a href="index.php">Home</a></li>
-		<li><a href="projects.php">Projects</a></li>
-		<li><a href="about.php">About</a></li>
-	</ul>
+	<?php
+		navBar();
+	?>
 </nav>
 
 <body>
-
+	
 	<section>
-
+		<p>
+			Create a Article
+		</p>
 	</section>
+
+	<aside>
+		<p>
+			Edit an Article
+		</p>
+	</aside>
+
+</body>
+
+<footer>
+	<?php
+		footerBar();
+	?>
+</footer>
 
 </html>

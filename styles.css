@@ -34,11 +34,13 @@ p{
 	width: 95%;
 	height: auto;
 	padding: 5px;
+	color: black;
 	-webkit-border-radius: 15px;
 }
 body{
 	background-color: #153450;
 	font: 14px Tahoma;
+	color: white;
 }
 footer{
 	width: 100%;

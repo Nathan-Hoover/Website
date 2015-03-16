@@ -1,6 +1,4 @@
-<?php
-	session_start();
-?>
+<?php include 'nlhInclude.php'; ?>
 <!doctype html>
 <html lang="en">
 
@@ -10,18 +8,12 @@
 </head>
 	
 <header>
-	<?php
-		include 'nlhInclude.php';
-		login();
-	?>
 </header>
 
 <nav>
-	<ul>
-		<li><a href="index.php">Home</a></li>
-		<li><a href="projects.php">Projects</a></li>
-		<li><a href="about.php">About</a></li>
-	</ul>
+	<?php
+		navBar();
+	?>
 </nav>
 
 <body>
@@ -43,6 +35,9 @@
 </body>
 
 <footer>
-	Nathaniel Hoover 2015
+	<?php
+		footerBar();
+	?>
 </footer>
+
 </html>
